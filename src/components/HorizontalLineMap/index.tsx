@@ -23,7 +23,7 @@ export const HorizontalLineMap: React.FC<HorizontalLineChartProps> = ({
         data={dataComMeses}
         theme={{
           textColor: "white",
-          fontSize: 14,
+          fontSize: 10,
           axis: {
             domain: {
               line: {
@@ -80,7 +80,7 @@ export const HorizontalLineMap: React.FC<HorizontalLineChartProps> = ({
             anchor: "bottom",
             direction: "row",
             translateY: 90,
-            itemsSpacing: 10,
+            itemsSpacing: 1,
             itemDirection: "left-to-right",
             itemWidth: 100,
             itemHeight: 10,

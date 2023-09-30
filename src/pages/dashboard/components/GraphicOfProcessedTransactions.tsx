@@ -15,7 +15,7 @@ const getStatusColor = (status: string) => {
   }
 };
 
-export const MapOfProcessedTransactions = () => {
+export const GraphicOfProcessedTransactions = () => {
   const { data: items } = useQuery(["items"], fetchItems);
 
   const months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"];

@@ -4,7 +4,7 @@ import { RiErrorWarningLine } from "react-icons/ri";
 
 interface CardStatusProps {
   percentage: string;
-  status: "approved" | "canceled" | "pending";
+  status: "approved" | "pending" | "denied";
 }
 
 const getTypeComponent = (status: string) => {
@@ -13,13 +13,13 @@ const getTypeComponent = (status: string) => {
       return {
         colorClass: "bg-green-500 text-green-500",
         icon: <IoCheckmarkCircleOutline />,
-        title: "Aprovado",
+        title: "Aprovada",
       };
-    case "canceled":
+    case "denied":
       return {
         colorClass: "bg-danger text-danger",
         icon: <AiOutlineCloseCircle />,
-        title: "Cancelado",
+        title: "Negada",
       };
     case "pending":
       return {
@@ -31,7 +31,7 @@ const getTypeComponent = (status: string) => {
       return {
         colorClass: "bg-green-500 text-white",
         icon: <IoCheckmarkCircleOutline />,
-        title: "Aprovado",
+        title: "Aprovada",
       };
   }
 };

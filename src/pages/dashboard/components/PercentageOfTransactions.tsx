@@ -55,10 +55,10 @@ export const PercentageOfTransactions = () => {
         <CardStatus percentage={percentageApproved} status="approved" />
       </div>
       <div className="grow">
-        <CardStatus percentage={percentagePending} status="pending" />
+        <CardStatus percentage={percentagePending} status="denied" />
       </div>
       <div className="grow">
-        <CardStatus percentage={percentageDenied} status="canceled" />
+        <CardStatus percentage={percentageDenied} status="pending" />
       </div>
     </div>
   );
