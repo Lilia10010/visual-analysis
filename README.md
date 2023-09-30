@@ -64,6 +64,11 @@ npm run dev
 yarn dev
 ```
 
+- Configuração da Porta da API
+
+  - Se a aplicação da API não estiver rodando na porta padrão 3001, você pode configurar a porta através de um arquivo de ambiente .env
+  - Crie um arquivo .env na raiz do seu projeto e adicione seguindo o exemplo do arquivo .env.example
+
 - Para executar os testes automatizados, siga os passos anteriores para configurar o projeto e, em seguida, execute o seguinte comando:
 
 ```shell
